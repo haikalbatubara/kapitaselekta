@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laman Pribadi - Kapita Selekta</title>
+  <style>
+    :root {
+      --bg-start: #e3f2fd;
+      --bg-end: #bbdefb;
+      --card: #ffffff;
+      --muted: #6c7a89;
+      --accent: #3498db;
+      --hover-accent: #217dbb;
+      --text-primary: #2c3e50;
+      --text-muted: #546e7a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+      background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 40px auto; padding: 24px; }
+    header { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-bottom: 20px; }
+    .brand h1 { font-size: 22px; color: var(--text-primary); }
+    .brand .meta { font-size: 14px; color: var(--text-muted); }
+    nav { margin-left: auto; }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-left: 16px;
+      font-size: 15px; transition: color 0.3s ease;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero { display: grid; grid-template-columns: 1fr 320px; gap: 20px; margin-top: 20px; }
+    .card {
+      background: var(--card); border-radius: 14px; padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+    h2, h3, h4 { color: var(--text-primary); margin-bottom: 10px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    ul.list, ol { padding-left: 20px; }
+    ul.list li, ol li { margin-bottom: 6px; }
+    footer {
+      margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0;
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+    .btn {
+      display: inline-block; padding: 10px 16px; border-radius: 8px;
+      background: var(--accent); color: #fff; text-decoration: none;
+      font-size: 16px; transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover { background: var(--hover-accent); transform: scale(1.05); }
+    .section-card { margin-bottom: 16px; }
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr; }
+      nav { margin: 10px 0 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Kapita Selekta — Laman Pribadi</h1>
+        <span class="meta">Muhammad Haikal Batubara — 2255061010</span>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#materi">Materi</a>
+        <a href="#internet">10 Kekuatan Internet</a>
+        <a href="#open">Open Source</a>
+        <a href="#analisis">Analisis</a>
+        <a href="#daftar">Daftar Rekan</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <main class="card">
+        <h2 id="about">Tentang Laporan</h2>
+        <p class="meta">Judul: <strong>Segmentasi Pelanggan PT. Bank Sumut Berdasarkan Data Transaksi M-Banking Menggunakan K-Means Clustering</strong></p>
+        <p>Halaman ini berisi ringkasan materi dan tugas untuk mata kuliah Kapita Selekta. Dokumen lengkap dapat diunduh melalui tombol di samping.</p>
+
+        <div class="section-card card">
+          <h3>Ringkasan (Abstract singkat)</h3>
+          <p>Penelitian ini menerapkan algoritma machine learning <em>K-Means Clustering</em> untuk segmentasi pelanggan PT. Bank Sumut berdasarkan data transaksi M-Banking. Proses melibatkan analisis kebutuhan, perancangan alur, validasi hasil clustering, serta pengelolaan proyek analisis data.</p>
+        </div>
+
+        <div class="section-card">
+          <h3 id="materi">Materi Tugas (Isi Pokok)</h3>
+          <div class="grid-2">
+            <div>
+              <h4>Konsentrasi & SWEBOK</h4>
+              <ul class="list">
+                <li>Konsentrasi: Artificial Intelligence</li>
+                <li>SWEBOK: Software Requirements, Software Design, Software Testing, Software Engineering Management</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tools & Pendekatan</h4>
+              <ul class="list">
+                <li>Bahasa: Python</li>
+                <li>Metode: K-Means Clustering</li>
+                <li>Dataset: Data transaksi M-Banking</li>
+                <li>Pendukung: Cloud storage, dataset publik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card card">
+          <h3 id="internet">Prioritas Internet — 10 Kekuatan Pendatar Dunia</h3>
+          <ul class="list">
+            <li>Outsourcing: memanfaatkan layanan cloud & library publik.</li>
+            <li>Offshoring: kolaborasi riset dan data lintas negara.</li>
+            <li>Open-sourcing: kontribusi & akses software terbuka.</li>
+            <li>Insourcing: optimalisasi data internal organisasi.</li>
+            <li>Supply-chaining: integrasi layanan perbankan dengan digital channel.</li>
+            <li>In-forming: memanfaatkan Google & data publik untuk insight.</li>
+            <li>Workflow software: pipeline otomatis untuk analisis clustering.</li>
+            <li>Uploading: berbagi kode & laporan melalui platform online.</li>
+            <li>Wireless: pemanfaatan mobile banking untuk data transaksi.</li>
+            <li>Digital content: publikasi hasil riset ke platform akademik.</li>
+          </ul>
+        </div>
+
+        <div class="section-card card">
+          <h3 id="open">Pemahaman Open Source Philosophy</h3>
+          <p>Open Source Philosophy menekankan transparansi, kolaborasi, dan kebebasan dalam mengembangkan software. Dalam konteks penelitian ini, prinsip open source dipakai dengan memanfaatkan <em>library Python</em> terbuka (seperti Scikit-learn), serta berbagi kode agar dapat digunakan kembali oleh peneliti lain.</p>
+          <p><strong>Prioritas saya:</strong> menerapkan filosofi <em>sharing & collaboration</em>, karena dengan berbagi kode dan dataset, penelitian bisa lebih cepat berkembang dan menghasilkan solusi yang berguna bagi industri perbankan.</p>
+        </div>
+
+        <div class="section-card card">
+          <h3 id="analisis">Analisis SWOT & Porter</h3>
+          <div class="grid-2">
+            <div>
+              <h4>SWOT (Ringkasan)</h4>
+              <ul class="list">
+                <li><strong>Strengths:</strong> Minat & pemahaman machine learning, terbiasa analisis data keuangan.</li>
+                <li><strong>Weaknesses:</strong> Implementasi real-time terbatas, perlu pendalaman validasi model.</li>
+                <li><strong>Opportunities:</strong> Industri perbankan butuh segmentasi pelanggan, data M-Banking kaya.</li>
+                <li><strong>Threats:</strong> Risiko keamanan data nasabah, akurasi bergantung kualitas data.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Analisis Porter</h4>
+              <ul class="list">
+                <li>Ancaman pendatang baru: tinggi (banyak riset ML).</li>
+                <li>Kekuatan pemasok: data transaksi sebagai aset utama.</li>
+                <li>Kekuatan pembeli: bank sangat butuh insight pelanggan.</li>
+                <li>Substitusi: metode lain (Decision Tree, Random Forest, Deep Learning).</li>
+                <li>Persaingan: sedang (riset serupa ada, tapi fokus Bank Sumut membedakan).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card card">
+          <h3 id="daftar">Daftar Rekan Seminar</h3>
+          <ol>
+            <li>Aura Septanu Pinasti — Perancangan Website Agenda Kunjungan Tamu di Bappeda Provinsi Lampung</li>
+            <li>Alya Ananda — Pengembangan Front End Sistem Magnet BPS Kota Bandar Lampung</li>
+            <li>Alih Bangun Wicaksono — Pengembangan Website DAMS PT. PLN ICONETS PLUS</li>
+            <li>Ahmad Mauluddin — Pembangunan Front-End Role Admin Website presensi.unila.ac.id</li>
+            <li>Anastasia Citra Negara — Optimasi Digital Marketing Website Mitralokal.id</li>
+            <li>Hanifa Sophia Rani — Order Service Microservice Polinela Mart (Minikube)</li>
+            <li>Nabila Apdika Khairunnisyah — Order Service Microservice Polinela Mart (Podman)</li>
+            <li>Rani Faradisya — Order Service Microservice Polinela Mart (K3S)</li>
+            <li>Leo Fetri Hendli — Dashboard Interaktif Tableau Data Ekonomi Makro</li>
+            <li>Zaki Ahmad Basyari — Dashboard Tableau Pertumbuhan Ekonomi & Ketenagakerjaan</li>
+          </ol>
+        </div>
+      </main>
+
+      <aside class="card">
+        <h3>Download Dokumen</h3>
+        <p>Klik tombol di bawah untuk mengunduh dokumen PDF lengkap.</p>
+        <a href="https://drive.google.com/drive/folders/11dfqj6u7wXpMp8Kylymd-Jq6qG8eQNtY?usp=sharing" 
+           class="btn" target="_blank">Download Dokumen</a>
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Muhammad Haikal Batubara. Semua Hak Dilindungi.</p>
+    </footer>
+  </div>
+</body>
+</html>
